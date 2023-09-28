@@ -10,6 +10,9 @@ class parent{
     parent(int a){
         System.out.println("parent  param const" + a);
     }
+    parent(int a,int b){
+        System.out.println("parent  2param const" + a);
+    }
 
 }
 
@@ -26,11 +29,12 @@ class child extends parent{
         System.out.println("child non param const");
     }
     child(int a){
+//        super(a);
         System.out.println("child param const");
     }
 
     child(int a,int b){
-        super(a);
+        super(a,b);
         System.out.println("child 2-param const " + a + " " + b);
     }
 
@@ -39,6 +43,6 @@ class child extends parent{
 public class inheritance {
     public static void main(String[] args) {
    child s=new child(1,2);
-   s.showname();
+//   s.showname();
     }
 }
