@@ -89,7 +89,7 @@ public class BinaryTreeArray {
         }
         else{
             arr[loc]=arr[lastUsedIndex];
-            lastUsedIndex-;
+            lastUsedIndex--;
         }
 
     }
